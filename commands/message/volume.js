@@ -27,7 +27,7 @@ module.exports = {
         const volume = parseInt(args[0]);
         
         if (!volume || volume < 1 || volume > 100) {
-            const embed = new EmbedBuilder().setDescription('❌ Please provide a valid volume level (1-100)! Example: `!volume 50`');
+            const embed = new EmbedBuilder().setDescription('❌ Please provide a valid volume level (1-100)! Example: `.volume 50`');
             return message.reply({ embeds: [embed] })
                 .then(m => setTimeout(() => m.delete().catch(() => {}), 3000));
         }
