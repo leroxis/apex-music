@@ -35,7 +35,7 @@ module.exports = {
                     `• **Uptime:** ${hours}h ${minutes}m ${seconds}s`
                 )
                 .setTimestamp()
-                .setFooter({ text: 'Developed by Apex Development' });
+                .setFooter({ text: 'Developed by Lerox Inc' });
 
             await message.reply({ embeds: [embed] });
         } catch (error) {
