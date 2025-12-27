@@ -87,8 +87,8 @@ module.exports = {
             });
 
             const successEmbed = new EmbedBuilder()
-                .setTitle('✅ Central Music System Setup Complete!')
-                .setDescription(`Central music control has been setup in <#${channelId}>`)
+                .setTitle('✅ Apex Music System Setup Complete!')
+                .setDescription(`Apex music control has been setup in <#${channelId}>`)
                 .addFields(
                     { name: '📍 Channel', value: `<#${channelId}>`, inline: true },
                     { name: '🔊 Voice Channel', value: voiceChannel ? `<#${voiceChannel.id}>` : 'Not set', inline: true },
