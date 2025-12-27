@@ -28,7 +28,7 @@ module.exports = {
         const to = parseInt(args[1]);
         
         if (!from || !to || from < 1 || to < 1) {
-            const embed = new EmbedBuilder().setDescription('❌ Please provide valid positions! Example: `!move 3 1` (move song 3 to position 1)');
+            const embed = new EmbedBuilder().setDescription('❌ Please provide valid positions! Example: `.move 3 1` (move song 3 to position 1)');
             return message.reply({ embeds: [embed] })
                 .then(m => setTimeout(() => m.delete().catch(() => {}), 3000));
         }
