@@ -25,11 +25,11 @@ module.exports = {
                 .setColor(0x1DB954)
                 .setDescription(
                     'Need help or have questions? Join our official support server:\n' +
-                    '[Support Server](https://discord.gg/4EMVfFTasz)\n\n' +
+                    '[Support Server](https://discord.gg/AfdUzG3TFd)\n\n' +
                     'For direct inquiries, contact: **Lerox**\n\n'
                 )
                 .setTimestamp()
-                .setFooter({ text: 'Developed by Apex Development' });
+                .setFooter({ text: 'Developed by Lerox Inc' });
             
             await message.reply({ embeds: [embed] });
         } catch (error) {
