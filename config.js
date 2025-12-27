@@ -26,18 +26,18 @@ class EnterpriseConfigurationManager {
             },
             
             lavalink: {
-                host: EnvironmentVariableProcessor.LAVALINK_HOST || "5.39.63.207", 
-                port: EnvironmentVariableProcessor.LAVALINK_PORT || 8262,       
+                host: EnvironmentVariableProcessor.LAVALINK_HOST || "de-01.strixnodes.com", 
+                port: EnvironmentVariableProcessor.LAVALINK_PORT || 2010,       
                 password: EnvironmentVariableProcessor.LAVALINK_PASSWORD || "glace", 
                 secure: EnvironmentVariableProcessor.LAVALINK_SECURE === 'true' || false
             },
             
             bot: {
                 prefix: EnvironmentVariableProcessor.BOT_PREFIX || ".",
-                ownerIds: ["983793704701681674","1237358951247384586","1284963788575080502"],
+                ownerIds: ["983793704701681674","991409937022468169","813466929594630164"],
                 embedColor: 0x00AE86,
                 supportServer: "https://discord.gg/4EMVfFTasz",
-                defaultStatus: "Apex Music"
+                defaultStatus: "Powered By Lerox 💘"
             },
             
             features: this.constructAdvancedFeatureConfiguration()
