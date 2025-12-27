@@ -28,7 +28,7 @@ module.exports = {
         const validModes = ['off', 'none', 'track', 'song', 'queue', 'all'];
         
         if (!mode || !validModes.includes(mode)) {
-            const embed = new EmbedBuilder().setDescription('❌ Please specify a valid loop mode.\n**Options:** `off`, `track`, `queue`\nExample: `!loop track`');
+            const embed = new EmbedBuilder().setDescription('❌ Please specify a valid loop mode.\n**Options:** `off`, `track`, `queue`\nExample: `.loop track`');
             return message.reply({ embeds: [embed] })
                 .then(m => setTimeout(() => m.delete().catch(() => {}), 3000));
         }
