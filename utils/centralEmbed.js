@@ -12,7 +12,7 @@ class CentralEmbedHandler {
             const channel = await this.client.channels.fetch(channelId);
             
             const embed = new EmbedBuilder()
-            .setAuthor({ name: 'Apex Music Control Center', iconURL: 'https://cdn.discordapp.com/emojis/896724352949706762.gif', url: 'https://discord.gg/xQF9f9yUEM' })
+            .setAuthor({ name: 'Apex Music Control Center', iconURL: 'https://cdn.discordapp.com/emojis/896724352949706762.gif', url: 'https://discord.gg/AfdUzG3TFd' })
                 .setDescription([
                     '',
                     '- Simply type a **song name** or **YouTube link** to start the party!',
@@ -57,7 +57,7 @@ class CentralEmbedHandler {
                 .setImage('https://i.ibb.co/DDSdKy31/ezgif-8aec7517f2146d.gif')
                 .setThumbnail('https://cdn.discordapp.com/attachments/1234567890/1234567890/music_note.gif') // Add a cute music note gif
                 .setFooter({ 
-                    text: 'Developed by Apex Development',
+                    text: 'Developed by Lerox Inc',
                     iconURL: this.client.user.displayAvatarURL()
                 })
                 .setTimestamp();
@@ -193,7 +193,7 @@ class CentralEmbedHandler {
                     .setAuthor({ 
                         name: `${trackInfo.title}`, 
                         iconURL: 'https://cdn.discordapp.com/emojis/896724352949706762.gif',
-                        url: 'https://discord.gg/xQF9f9yUEM' 
+                        url: 'https://discord.gg/AfdUzG3TFd' 
                     })
                     .setDescription([
                         `**🎤 Artist:** ${trackInfo.author}`,
@@ -209,7 +209,7 @@ class CentralEmbedHandler {
                     .setThumbnail(trackInfo.thumbnail || 'https://cdn.discordapp.com/emojis/896724352949706762.gif')
                     .setImage(trackInfo.paused ? null : 'https://i.ibb.co/KzbPV8jd/aaa.gif')
                     .setFooter({ 
-                        text: `Apex Music • ${statusText} Developed by Apex Development`,
+                        text: `Apex Music • ${statusText} Developed by Lerox Inc`,
                         iconURL: this.client.user.displayAvatarURL()
                     })
                     .setTimestamp();
@@ -263,7 +263,7 @@ class CentralEmbedHandler {
                 .setImage('https://i.ibb.co/DDSdKy31/ezgif-8aec7517f2146d.gif')
                 .setThumbnail('https://cdn.discordapp.com/attachments/1234567890/1234567890/music_note.gif') // Add a cute music note gif
                 .setFooter({ 
-                    text: 'Developed by Apex Development',
+                    text: '',
                     iconURL: this.client.user.displayAvatarURL()
                 })
                 .setTimestamp();
