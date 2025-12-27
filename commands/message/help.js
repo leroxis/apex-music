@@ -60,7 +60,7 @@ module.exports = {
                 .setTitle('📖 Apex Music - Command List')
                 .setColor(0x1DB954)
                 .setDescription(description)
-                .setFooter({ text: 'Developed by Apex Development' })
+                .setFooter({ text: 'Developed by Lerox Inc' })
                 .setTimestamp();
 
             await message.reply({ embeds: [embed] });
